@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edge">
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|end"
+                android:paddingEnd="10dp"
+                android:textSize="34sp" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/edge"
+            android:gravity="center|end"
+            android:paddingEnd="10dp"
+            android:textSize="24sp" />
+        ScrollView/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="AC"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/clearHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="CH"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="D"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/div"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="/"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/n7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="7"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/n8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="8"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/n9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="9"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/mul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="*"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/n4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="4"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/n5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="5"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/n6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="6"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="-"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/n1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="1"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/n2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="2"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/n3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="3"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="+"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/n00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="00"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/n0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="0"
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/npoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingTop="0dp"
+                    android:text="."
+                    android:textColor="#FAF6F6"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/ans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:backgroundTintMode="add"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="="
+                    android:textColor="#FAF6F6"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
